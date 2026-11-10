@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Slat Team Util</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 680px; margin: 48px auto; padding: 0 16px; line-height: 1.6; color: #1f2328; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e6edf3; background: #0d1117; } a { color: #58a6ff; } }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p><em>Last updated: November 10, 2026</em></p>
+
+<p>Slat Team Util ("the bot") is a private Discord bot used internally by Slat's video editing team. This policy explains what data it accesses and how that data is used.</p>
+
+<h2>Google data accessed</h2>
+<p>Access to Google data is optional and is granted by a team administrator signing in with a Google account. The bot requests read-only scopes only:</p>
+<ul>
+  <li><strong>Google Drive</strong> (<code>drive.metadata.readonly</code>): the names, IDs, and creation dates of folders inside the project folder the administrator chooses. The bot does not open or download file contents.</li>
+  <li><strong>YouTube</strong> (<code>youtube.readonly</code>): the connected channel's name and its latest uploads (titles, privacy status, and scheduled or published times).</li>
+</ul>
+<p>The bot cannot create, change, move, share, or delete anything in Google Drive or YouTube.</p>
+
+<h2>How the data is used</h2>
+<p>Folder names and dates are used to register new projects in the team's project list. Video titles and times are used to fill in posting schedules for the team's projects. The data is shown only inside the team's own Discord server.</p>
+
+<h2>Storage</h2>
+<p>The bot stores the project information it creates and the Google access token for each connection in its own database, which runs on a computer or server operated by the team, and in the team's private backups. Tokens are never shown in Discord or written to the audit history.</p>
+
+<h2>Sharing</h2>
+<p>Google user data is not sold, shared with third parties, used for advertising, or used to train AI models. It is not transferred to anyone outside the team. The bot's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Discord data</h2>
+<p>Inside Discord, the bot stores the user IDs and server display names of team members involved in projects, along with the project records administrators enter (names, links, prices, schedules).</p>
+
+<h2>Removing access and data</h2>
+<p>An administrator can disconnect Google Drive or YouTube at any time with the bot's Disconnect button, which also revokes the access at Google. Access can also be removed at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Server administrators can erase all of the bot's data for their server with its reset command.</p>
+
+<h2>Contact</h2>
+<p>For questions about this policy, open an issue at <a href="https://github.com/lucasdonini0/slat-bot-site/issues">github.com/lucasdonini0/slat-bot-site/issues</a>.</p>
+
+<p><a href="index.html">Home</a></p>
+</body>
+</html>
